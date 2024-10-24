@@ -31,8 +31,8 @@ function ProductList() {
 
     return (
         <div className="bg-slate-200">
-            <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                <h1 className="text-center text-5xl mb-10 font-extrabold text-black-400">IOT Solutions</h1>
+            <h1 className="text-center text-5xl pt-5 font-thin text-black-400">Popular Products</h1>
+            <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
                         <Link key={product.id} to={`page/${product._id}`} className=" border-black border-1 rounded-lg p-3 row-span-9 col-span-1 bg-slate-200 cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-white  hover:-translate-y-4 duration-300">
